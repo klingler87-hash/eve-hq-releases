@@ -1,0 +1,18 @@
+{
+  "version": "1.8.0",
+  "tag": "v1.8.0",
+  "archive": "EVE_HQ_1.8.0_UPDATE.zip",
+  "sha256": "612a6a4e1e0deb3067a202f27e1a10c66685d6a5a737c596f24ed3bcd86bf158",
+  "parts": [
+    "publishing/payloads/v1.8.0/part-01.txt",
+    "publishing/payloads/v1.8.0/part-02.txt",
+    "publishing/payloads/v1.8.0/part-03.txt",
+    "publishing/payloads/v1.8.0/part-04.txt",
+    "publishing/payloads/v1.8.0/part-05.txt",
+    "publishing/payloads/v1.8.0/part-06.txt",
+    "publishing/payloads/v1.8.0/part-07.txt",
+    "publishing/payloads/v1.8.0/part-08.txt",
+    "publishing/payloads/v1.8.0/part-09.txt",
+    "publishing/payloads/v1.8.0/part-10.txt"
+  ]
+}
