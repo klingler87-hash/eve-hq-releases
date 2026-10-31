@@ -34,4 +34,4 @@ jobs:
             echo "Release $RELEASE_TAG already exists; refusing to overwrite it."
             exit 1
           fi
-          gh release create "$RELEASE_TAG" "$RELEASE_FILE" --title "$RELEASE_TAG" --notes "Verified EVE HQ update package. Apply with the KnerdKnight EVE HQ GitHub desktop updater." --latest --verify-tag=false
+          gh release create "$RELEASE_TAG" "$RELEASE_FILE" --title "$RELEASE_TAG" --notes "Verified EVE HQ update package. Apply with the KnerdKnight EVE HQ GitHub desktop updater." --latest --target main
