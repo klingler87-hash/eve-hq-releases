@@ -1,0 +1,37 @@
+name: Publish verified EVE HQ update
+on:
+  push:
+    branches: [main]
+    paths:
+      - publishing/ready.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: eve-hq-release-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify release payload, package manifest, and SHA-256
+        id: prep
+        run: python3 scripts/prepare_release.py
+      - name: Publish approved release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ steps.prep.outputs.tag }}
+          RELEASE_FILE: ${{ steps.prep.outputs.archive }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            echo "Release $RELEASE_TAG already exists; refusing to overwrite it."
+            exit 1
+          fi
+          gh release create "$RELEASE_TAG" "$RELEASE_FILE" --title "$RELEASE_TAG" --notes "Verified EVE HQ update package. Apply with the KnerdKnight EVE HQ GitHub desktop updater." --latest --verify-tag=false
