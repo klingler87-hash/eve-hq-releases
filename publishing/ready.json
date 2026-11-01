@@ -1,9 +1,18 @@
 {
-  "version": "1.8.1",
-  "tag": "v1.8.1",
-  "archive": "EVE_HQ_1.8.1_UPDATE.zip",
-  "sha256": "7b317647a8b0816884a66340594b4c96cc079049ef9d36cdd059936db82d29cf",
+  "version": "1.8.2",
+  "tag": "v1.8.2",
+  "archive": "EVE_HQ_1.8.2_UPDATE.zip",
+  "sha256": "2cbc58efe611412ba1032acf688c26ae05961309d6a7955786d782d243b05fe1",
   "parts": [
-    "publishing/payloads/v1.8.1/part-01.txt"
+    "publishing/payloads/v1.8.2/part-01.txt",
+    "publishing/payloads/v1.8.2/part-02.txt",
+    "publishing/payloads/v1.8.2/part-03.txt",
+    "publishing/payloads/v1.8.2/part-04.txt",
+    "publishing/payloads/v1.8.2/part-05.txt",
+    "publishing/payloads/v1.8.2/part-06.txt",
+    "publishing/payloads/v1.8.2/part-07.txt",
+    "publishing/payloads/v1.8.2/part-08.txt",
+    "publishing/payloads/v1.8.2/part-09.txt",
+    "publishing/payloads/v1.8.2/part-10.txt"
   ]
 }
