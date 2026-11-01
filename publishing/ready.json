@@ -1,18 +1,18 @@
 {
-  "version": "1.8.2",
-  "tag": "v1.8.2",
-  "archive": "EVE_HQ_1.8.2_UPDATE.zip",
-  "sha256": "2cbc58efe611412ba1032acf688c26ae05961309d6a7955786d782d243b05fe1",
+  "version": "1.9.0",
+  "tag": "v1.9.0",
+  "archive": "EVE_HQ_1.9.0_UPDATE.zip",
+  "sha256": "60dff01383cc84240a8801cba0239cf57349b3475b3a608bf0e051dabcd6270c",
   "parts": [
-    "publishing/payloads/v1.8.2/part-01.txt",
-    "publishing/payloads/v1.8.2/part-02.txt",
-    "publishing/payloads/v1.8.2/part-03.txt",
-    "publishing/payloads/v1.8.2/part-04.txt",
-    "publishing/payloads/v1.8.2/part-05.txt",
-    "publishing/payloads/v1.8.2/part-06.txt",
-    "publishing/payloads/v1.8.2/part-07.txt",
-    "publishing/payloads/v1.8.2/part-08.txt",
-    "publishing/payloads/v1.8.2/part-09.txt",
-    "publishing/payloads/v1.8.2/part-10.txt"
+    "publishing/payloads/v1.9.0/part-01.txt",
+    "publishing/payloads/v1.9.0/part-02.txt",
+    "publishing/payloads/v1.9.0/part-03.txt",
+    "publishing/payloads/v1.9.0/part-04.txt",
+    "publishing/payloads/v1.9.0/part-05.txt",
+    "publishing/payloads/v1.9.0/part-06.txt",
+    "publishing/payloads/v1.9.0/part-07.txt",
+    "publishing/payloads/v1.9.0/part-08.txt",
+    "publishing/payloads/v1.9.0/part-09.txt",
+    "publishing/payloads/v1.9.0/part-10.txt"
   ]
 }
